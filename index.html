@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMS Smart-reader — політика конфіденційності</title>
+<style>
+  :root { --bg:#fff; --fg:#1b1f24; --muted:#59636e; --line:#d8dee4; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1419; --fg:#e6edf3; --muted:#9aa4ae; --line:#30363d; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; } h2 { font-size:1.15rem; margin:28px 0 8px; }
+  p.meta { color:var(--muted); margin:0 0 24px; } ul { padding-left:1.2rem; } li { margin:4px 0; }
+  hr { border:0; border-top:1px solid var(--line); margin:40px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>BMS Smart-reader — політика конфіденційності</h1>
+<p class="meta">Чинна з 21 жовтня 2026 р. Застосунок для Android: <code>ua.bms.reader.play</code>.</p>
+
+<h2>Коротко</h2>
+<ul>
+  <li>Застосунок читає дані BMS вашого акумулятора по Bluetooth LE і показує їх на екрані. Він лише читає й нічого не змінює в налаштуваннях BMS.</li>
+  <li>Без облікових записів, реклами, аналітики й сторонніх бібліотек відстеження.</li>
+  <li>Місцезнаходження застосунок не визначає і не збирає. Дозвіл на сканування Bluetooth оголошено з позначкою «не для визначення місцезнаходження».</li>
+  <li>З телефона застосунок передає дані лише в одному випадку: коли ви самі надсилаєте звіт діагностики.</li>
+</ul>
+
+<h2>Що зберігається на телефоні</h2>
+<ul>
+  <li>Адреса (MAC) вибраного акумулятора і налаштування екрана.</li>
+  <li>Локальний журнал подій пака (до 300 записів, до 90 днів) і статистика стабільності показів комірок.</li>
+</ul>
+<p>Ці дані нікуди не надсилаються, окрім випадку, описаного нижче. Їх може включати стандартне резервне копіювання Android у ваш обліковий запис Google, якщо воно у вас увімкнене. Цим керуєте ви в налаштуваннях телефона.</p>
+
+<h2>Звіт діагностики</h2>
+<p>Якщо застосунок не може прочитати акумулятор, ви можете надіслати розробнику звіт. Перед надсиланням застосунок показує <b>повний текст звіту</b>, і він іде лише після натискання «Надіслати». Автоматично нічого не надсилається.</p>
+<p>Звіт містить:</p>
+<ul>
+  <li>версію застосунку, версію Android, виробника й модель телефона;</li>
+  <li>що сталося (код помилки та опис);</li>
+  <li>назву, MAC-адресу й рівень сигналу вашого акумулятора, а також пристроїв поруч, схожих на BMS. Решта пристроїв поруч лише рахується: без назв і адрес;</li>
+  <li>перелік Bluetooth-сервісів акумулятора і останній обмін даними з BMS. Паролі й поля користувача JK BMS вирізаються ще до звіту;</li>
+  <li>до 20 останніх подій журналу пака і до 12 рядків журналу підключення з часом;</li>
+  <li>необов'язковий коментар, якщо ви його напишете (до 500 символів).</li>
+</ul>
+<p>Звіт не містить імені, електронної пошти, номера телефону, місцезнаходження, ідентифікаторів пристрою чи реклами.</p>
+
+<h2>Де зберігаються звіти і хто їх бачить</h2>
+<ul>
+  <li>Звіти передаються лише шифрованим з'єднанням (HTTPS) у базу даних на платформі Supabase, яку використовує розробник.</li>
+  <li>Читати звіти може лише розробник. Сам застосунок уміє тільки надіслати звіт і не може прочитати чужі.</li>
+  <li>Звіти не продаються й не передаються третім особам. Використовуються лише для пошуку й виправлення помилок.</li>
+  <li>Звіти видаляються автоматично приблизно через 180 днів.</li>
+  <li>Платформа хостингу може технічно фіксувати IP-адресу запиту у своїх журналах. Застосунок IP-адресу у звіт не записує.</li>
+</ul>
+
+<h2>Видалення даних і зв'язок</h2>
+<p>Щоб видалити надісланий звіт або поставити питання, напишіть на <b><a href="mailto:3lh.home@gmail.com">3lh.home@gmail.com</a></b>. Вкажіть приблизний час надсилання і модель телефона: облікових записів немає, тож звіт знаходимо саме за цими даними.</p>
+
+<h2>Діти</h2>
+<p>Застосунок призначений для власників акумуляторних систем і не розрахований на дітей.</p>
+
+<h2>Зміни</h2>
+<p>Якщо політика зміниться, нова версія з'явиться на цій сторінці з новою датою.</p>
+
+<hr>
+
+<h1>BMS Smart-reader — Privacy Policy</h1>
+<p class="meta">Effective 21 October 2026. Android app <code>ua.bms.reader.play</code>.</p>
+<ul>
+  <li>The app reads your battery's BMS over Bluetooth LE and shows the data. It only reads and never changes BMS settings.</li>
+  <li>No accounts, ads, analytics or third-party tracking SDKs. No location: the Bluetooth scan permission is declared "never for location".</li>
+  <li>Stored on the phone only: the selected battery's MAC address, screen settings, a local event log (up to 300 entries, 90 days) and cell-reading statistics. Android's standard backup to your Google account may include them if you enabled it.</li>
+  <li>Data leaves the phone only when <b>you</b> send a diagnostic report. The full text is shown first; nothing is sent automatically. It contains: app and Android version, phone manufacturer and model, what failed, the name, MAC address and signal of your battery and of nearby BMS-like devices (other devices are only counted), the battery's Bluetooth service list and the last BMS exchange (JK passwords and user fields are removed), up to 20 recent pack events and 12 connection-log lines, and an optional comment.</li>
+  <li>Reports travel over HTTPS to a Supabase database used by the developer. Only the developer can read them; they are not sold or shared and are used only to fix problems. They are deleted automatically after about 180 days. The hosting platform may log the request IP; the app does not put it in the report.</li>
+  <li>To delete a report or ask a question, write to <b><a href="mailto:3lh.home@gmail.com">3lh.home@gmail.com</a></b> with the approximate time sent and your phone model.</li>
+  <li>Not directed at children.</li>
+</ul>
+</main>
+</body>
+</html>
