@@ -24,6 +24,7 @@
   <li>Застосунок читає дані BMS вашого акумулятора по Bluetooth LE і показує їх на екрані. Він лише читає й нічого не змінює в налаштуваннях BMS.</li>
   <li>Без облікових записів, реклами, аналітики й сторонніх бібліотек відстеження.</li>
   <li>Місцезнаходження застосунок не визначає і не збирає. Дозвіл на сканування Bluetooth оголошено з позначкою «не для визначення місцезнаходження».</li>
+  <li>На Android 9–11 застосунок просить дозвіл на місцезнаходження, бо без нього Android не дає шукати Bluetooth-пристрої. Саме місцезнаходження застосунок не читає й нікуди не надсилає.</li>
   <li>З телефона застосунок передає дані лише в одному випадку: коли ви самі надсилаєте звіт діагностики.</li>
 </ul>
 
@@ -72,6 +73,7 @@
 <ul>
   <li>The app reads your battery's BMS over Bluetooth LE and shows the data. It only reads and never changes BMS settings.</li>
   <li>No accounts, ads, analytics or third-party tracking SDKs. No location: the Bluetooth scan permission is declared "never for location".</li>
+  <li>On Android 9–11 the app asks for the location permission because without it Android does not let any app search for Bluetooth devices. The app does not read your location and does not send it anywhere.</li>
   <li>Stored on the phone only: the selected battery's MAC address, screen settings, a local event log (up to 300 entries, 90 days) and cell-reading statistics. Android's standard backup to your Google account may include them if you enabled it.</li>
   <li>Data leaves the phone only when <b>you</b> send a diagnostic report. The full text is shown first; nothing is sent automatically. It contains: app and Android version, phone manufacturer and model, what failed, the name, MAC address and signal of your battery and of nearby BMS-like devices (other devices are only counted), the battery's Bluetooth service list and the last BMS exchange (JK passwords and user fields are removed), up to 20 recent pack events and 12 connection-log lines, and an optional comment.</li>
   <li>Reports travel over HTTPS to a Supabase database used by the developer. Only the developer can read them; they are not sold or shared and are used only to fix problems. They are deleted automatically after about 180 days. The hosting platform may log the request IP; the app does not put it in the report.</li>
